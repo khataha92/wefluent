@@ -1,0 +1,88 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 27
+    defaultConfig {
+        applicationId "com.wefluent.wefluent"
+        minSdkVersion 21
+        targetSdkVersion 27
+        versionCode 1
+        versionName "1.0"
+        multiDexEnabled true
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility 1.8
+        targetCompatibility 1.8
+    }
+
+    dataBinding {
+        enabled = true
+    }
+
+    buildTypes {
+        debug {
+            ext.enableCrashlytics = false
+            buildConfigField "boolean", "REPORT_CRASHES", "false"
+        }
+
+        release {
+            ext.enableCrashlytics = true
+            buildConfigField "boolean", "REPORT_CRASHES", "true"
+        }
+    }
+}
+
+apply plugin: 'io.fabric'
+
+repositories {
+    maven { url 'https://maven.fabric.io/public' }
+}
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation "com.android.support:appcompat-v7:$supportLibraryVersion"
+    implementation "com.android.support:design:$supportLibraryVersion"
+    implementation "com.google.firebase:firebase-config:15.0.2"
+    implementation "com.google.firebase:firebase-messaging:15.0.2"
+    implementation "com.google.firebase:firebase-auth:15.1.0"
+    implementation "com.google.firebase:firebase-database:15.0.0"
+    implementation "com.twilio:video-android:2.0.0-beta4"
+    implementation 'com.android.support:multidex:1.0.3'
+    implementation "com.koushikdutta.ion:ion:2.2.1"
+    implementation 'com.twitter.sdk.android:twitter-core:3.2.0'
+    implementation 'com.twitter.sdk.android:twitter:3.2.0'
+    implementation 'com.facebook.android:facebook-android-sdk:[4,5)'
+    implementation "com.android.support:preference-v14:$supportLibraryVersion"
+    implementation 'com.google.android.gms:play-services-auth:15.0.0'
+    implementation 'de.hdodenhof:circleimageview:2.2.0'
+    implementation 'com.github.bumptech.glide:glide:4.7.1'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.7.1'
+    compile('com.crashlytics.sdk.android:crashlytics:2.9.1@aar') {
+
+        transitive = true;
+    }
+    compile 'org.jetbrains:annotations:15.0'
+    implementation project(':widgets')
+    implementation project(':twilio')
+}
+
+task generateXmlConstantsFile(type: JavaExec) {
+    classpath files('libs/RemoteConfig.jar')
+    main 'RemoteConfig'
+    args project(':app').projectDir.absolutePath, "remote_config_defaults.xml", "com.wefluent.wefluent.constants"
+}
+
+preBuild.dependsOn(generateXmlConstantsFile)
+
+
+
+
+apply plugin: 'com.google.gms.google-services'

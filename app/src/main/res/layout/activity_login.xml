@@ -1,0 +1,66 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="bottom|center_horizontal"
+        tools:context="com.wefluent.wefluent.activities.LoginActivity">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/background" />
+
+        <com.facebook.login.widget.LoginButton
+            android:id="@+id/facebook_fake_button"
+            android:layout_width="0dp"
+            android:layout_height="0dp" />
+
+        <com.twitter.sdk.android.core.identity.TwitterLoginButton
+            android:id="@+id/twitter_fake_button"
+            android:layout_width="0dp"
+            android:layout_height="0dp" />
+
+        <com.wefluent.widgets.LoginButton
+            android:id="@+id/facebook_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/twitter_login"
+            android:layout_marginLeft="@dimen/activity_vertical_margin"
+            android:layout_marginRight="@dimen/activity_vertical_margin"
+            app:icon="@drawable/ic_facebook"
+            app:login_background="@color/FACEBOOK_COLOR"
+            app:text="@string/LOGIN_FACEBOOK" />
+
+        <com.wefluent.widgets.LoginButton
+            android:id="@+id/twitter_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/google_login"
+            android:layout_marginLeft="@dimen/activity_vertical_margin"
+            android:layout_marginRight="@dimen/activity_vertical_margin"
+            android:layout_marginTop="10dp"
+            app:icon="@drawable/ic_twitter"
+            app:login_background="@color/TWITTER_COLOR"
+            app:text="@string/LOGIN_TWITTER" />
+
+        <com.wefluent.widgets.LoginButton
+            android:id="@+id/google_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"
+            android:layout_marginLeft="@dimen/activity_vertical_margin"
+            android:layout_marginRight="@dimen/activity_vertical_margin"
+            android:layout_marginTop="10dp"
+            app:icon="@drawable/ic_google_plus"
+            app:login_background="@color/GOOGLE_COLOR"
+            app:text="@string/LOGIN_GOOGLE"
+            app:textSize="18sp" />
+
+
+    </RelativeLayout>
+
+</layout>

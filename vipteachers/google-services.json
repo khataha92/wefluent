@@ -1,0 +1,115 @@
+{
+  "project_info": {
+    "project_number": "1060128234883",
+    "firebase_url": "https://wefluent-3a8f6.firebaseio.com",
+    "project_id": "wefluent-3a8f6",
+    "storage_bucket": "wefluent-3a8f6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1060128234883:android:dc91a286c6bcd08c",
+        "android_client_info": {
+          "package_name": "com.wefluent.vipteachers"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1060128234883-828be217784lsv9m43cqken30mte03hr.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.wefluent.vipteachers",
+            "certificate_hash": "d728ffa8ff47393efd7cc64c89c97f2cd75b5bd0"
+          }
+        },
+        {
+          "client_id": "1060128234883-gk9mbra9mi7k2e1pmm7gn62b9bqhlkvv.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "1060128234883-i2pq2fh25298q6l2o9n090i2o0lmgbid.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDGAn3thV2GYmERY78juARzR8eJgiGRTUA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1060128234883-gk9mbra9mi7k2e1pmm7gn62b9bqhlkvv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1060128234883:android:ca99ef47bed10d36",
+        "android_client_info": {
+          "package_name": "com.wefluent.wefluent"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1060128234883-im9a10fbh58jnk23gtc4unsprrileq0l.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.wefluent.wefluent",
+            "certificate_hash": "5e8aad8ba4aedc5de59959077eef1b2918d39058"
+          }
+        },
+        {
+          "client_id": "1060128234883-gk9mbra9mi7k2e1pmm7gn62b9bqhlkvv.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "1060128234883-oft1v1u60d7clauquj4rl09kd5en9i8e.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.wefluent.wefluent",
+            "certificate_hash": "d728ffa8ff47393efd7cc64c89c97f2cd75b5bd0"
+          }
+        },
+        {
+          "client_id": "1060128234883-i2pq2fh25298q6l2o9n090i2o0lmgbid.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDGAn3thV2GYmERY78juARzR8eJgiGRTUA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1060128234883-gk9mbra9mi7k2e1pmm7gn62b9bqhlkvv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

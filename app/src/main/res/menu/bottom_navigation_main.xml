@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_home"
+        android:enabled="true"
+        android:icon="@drawable/ic_home"
+        android:title="@string/HOME"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_words"
+        android:enabled="true"
+        android:icon="@drawable/ic_assignment"
+        android:title="@string/WORDS"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_recorded_calls"
+        android:enabled="true"
+        android:icon="@drawable/ic_mic"
+        android:title="@string/RECORDED_CALLS"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/action_support"
+        android:enabled="true"
+        android:icon="@drawable/ic_email"
+        android:title="@string/SUPPORT"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/action_profile"
+        android:enabled="true"
+        android:icon="@drawable/ic_person"
+        android:title="@string/PROFILE"
+        app:showAsAction="ifRoom" />
+</menu>

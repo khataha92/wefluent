@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="FACEBOOK_COLOR">#3B5998</color>
+    <color name="TWITTER_COLOR">#1DA1F2</color>
+    <color name="GOOGLE_COLOR">#dd4b39</color>
+    <color name="WHITE">#FFFFFF</color>
+    <color name="ORANGE">#FBD749</color>
+    <color name="ONLINE">#70fb49</color>
+    <color name="CALL_COLOR">#3d8b28</color>
+    <color name="OFFLINE">#b3b3b3</color>
+    <color name="BUSY">#ffbd09</color>
+    <color name="BLACK">#000000</color>
+    <color name="GREY">#555555</color>
+    <color name="LIGHT_GREY">#EEEEEE</color>
+    <color name="TURQUOISE">#179B9E</color>
+</resources>

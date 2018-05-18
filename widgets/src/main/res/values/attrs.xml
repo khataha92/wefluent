@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="LoginButton">
+
+        <attr name="login_background" format="color"/>
+        <attr name="icon" format="reference"/>
+        <attr name="text" format="string"/>
+        <attr name="textSize" format="dimension"/>
+    </declare-styleable>
+
+</resources>
